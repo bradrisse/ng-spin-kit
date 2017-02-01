@@ -50,10 +50,10 @@ import { Component, Input, OnDestroy } from "@angular/core";
     }
   `],
   template: `
-    <div [hidden]="!visible" class="three-bounce-spinner">
-      <div class="bounce1"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
+    <div [hidden]="!visible" class="three-bounce-spinner" [ngStyle]="{ 'margin': margin }">
+      <div class="bounce1" [ngStyle]="{ 'background-color': color, 'width': size +'px', 'height': size +'px' }"></div>
+      <div class="bounce2" [ngStyle]="{ 'background-color': color, 'width': size +'px', 'height': size +'px' }"></div>
+      <div class="bounce3" [ngStyle]="{ 'background-color': color, 'width': size +'px', 'height': size +'px' }"></div>
     </div>
   `
 })
@@ -64,6 +64,15 @@ export class ThreeBounceComponent implements OnDestroy {
 
   @Input()
   public delay: number = 0;
+
+  @Input()
+  public color: string;
+
+  @Input()
+  public size: number;
+
+  @Input()
+  public margin: string;
 
   @Input()
   public set isRunning(value: boolean) {

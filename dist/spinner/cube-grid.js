@@ -40,24 +40,23 @@ var CubeGridComponent = (function () {
     CubeGridComponent.prototype.ngOnDestroy = function () {
         this.cancel();
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], CubeGridComponent.prototype, "delay", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean), 
-        __metadata('design:paramtypes', [Boolean])
-    ], CubeGridComponent.prototype, "isRunning", null);
-    CubeGridComponent = __decorate([
-        core_1.Component({
-            selector: 'sk-cube-grid',
-            styles: ["\n    .cube-grid-spinner {\n      margin: 25px auto;\n      width: 40px;\n      height: 40px;\n    }\n    \n    .cube-grid-spinner .cube {\n      float: left;\n      width: 33%;\n      height: 33%;\n      background-color: #333;\n    \n      -webkit-animation: cubeGridScaleDelay 1.3s infinite ease-in-out;\n      animation: cubeGridScaleDelay 1.3s infinite ease-in-out;\n    }\n    \n    .cube-grid-spinner .cube1 {\n      -webkit-animation-delay: 0.2s;\n      animation-delay: 0.2s;\n    }\n    \n    .cube-grid-spinner .cube2 {\n      -webkit-animation-delay: 0.3s;\n      animation-delay: 0.3s;\n    }\n    \n    .cube-grid-spinner .cube3 {\n      -webkit-animation-delay: 0.4s;\n      animation-delay: 0.4s;\n    }\n    \n    .cube-grid-spinner .cube4 {\n      -webkit-animation-delay: 0.1s;\n      animation-delay: 0.1s;\n    }\n    \n    .cube-grid-spinner .cube5 {\n      -webkit-animation-delay: 0.2s;\n      animation-delay: 0.2s;\n    }\n    \n    .cube-grid-spinner .cube6 {\n      -webkit-animation-delay: 0.3s;\n      animation-delay: 0.3s;\n    }\n    \n    .cube-grid-spinner .cube7 {\n      -webkit-animation-delay: 0s;\n      animation-delay: 0s;\n    }\n    \n    .cube-grid-spinner .cube8 {\n      -webkit-animation-delay: 0.1s;\n      animation-delay: 0.1s;\n    }\n    \n    .cube-grid-spinner .cube9 {\n      -webkit-animation-delay: 0.2s;\n      animation-delay: 0.2s;\n    }\n    \n    @-webkit-keyframes cubeGridScaleDelay {\n      0%, 70%, 100% {\n        -webkit-transform: scale3D(1, 1, 1);\n        transform: scale3D(1, 1, 1);\n      }\n      35% {\n        -webkit-transform: scale3D(0, 0, 1);\n        transform: scale3D(0, 0, 1);\n      }\n    }\n    \n    @keyframes cubeGridScaleDelay {\n      0%, 70%, 100% {\n        -webkit-transform: scale3D(1, 1, 1);\n        transform: scale3D(1, 1, 1);\n      }\n      35% {\n        -webkit-transform: scale3D(0, 0, 1);\n        transform: scale3D(0, 0, 1);\n      }\n    }\n  "],
-            template: "\n    <div [hidden]=\"!visible\" class=\"cube-grid-spinner\">\n      <div class=\"cube cube1\"></div>\n      <div class=\"cube cube2\"></div>\n      <div class=\"cube cube3\"></div>\n      <div class=\"cube cube4\"></div>\n      <div class=\"cube cube5\"></div>\n      <div class=\"cube cube6\"></div>\n      <div class=\"cube cube7\"></div>\n      <div class=\"cube cube8\"></div>\n      <div class=\"cube cube9\"></div>\n    </div>\n  "
-        }), 
-        __metadata('design:paramtypes', [])
-    ], CubeGridComponent);
     return CubeGridComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], CubeGridComponent.prototype, "delay", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean),
+    __metadata("design:paramtypes", [Boolean])
+], CubeGridComponent.prototype, "isRunning", null);
+CubeGridComponent = __decorate([
+    core_1.Component({
+        selector: 'sk-cube-grid',
+        styles: ["\n    .cube-grid-spinner {\n      margin: 25px auto;\n      width: 40px;\n      height: 40px;\n    }\n    \n    .cube-grid-spinner .cube {\n      float: left;\n      width: 33%;\n      height: 33%;\n      background-color: #333;\n    \n      -webkit-animation: cubeGridScaleDelay 1.3s infinite ease-in-out;\n      animation: cubeGridScaleDelay 1.3s infinite ease-in-out;\n    }\n    \n    .cube-grid-spinner .cube1 {\n      -webkit-animation-delay: 0.2s;\n      animation-delay: 0.2s;\n    }\n    \n    .cube-grid-spinner .cube2 {\n      -webkit-animation-delay: 0.3s;\n      animation-delay: 0.3s;\n    }\n    \n    .cube-grid-spinner .cube3 {\n      -webkit-animation-delay: 0.4s;\n      animation-delay: 0.4s;\n    }\n    \n    .cube-grid-spinner .cube4 {\n      -webkit-animation-delay: 0.1s;\n      animation-delay: 0.1s;\n    }\n    \n    .cube-grid-spinner .cube5 {\n      -webkit-animation-delay: 0.2s;\n      animation-delay: 0.2s;\n    }\n    \n    .cube-grid-spinner .cube6 {\n      -webkit-animation-delay: 0.3s;\n      animation-delay: 0.3s;\n    }\n    \n    .cube-grid-spinner .cube7 {\n      -webkit-animation-delay: 0s;\n      animation-delay: 0s;\n    }\n    \n    .cube-grid-spinner .cube8 {\n      -webkit-animation-delay: 0.1s;\n      animation-delay: 0.1s;\n    }\n    \n    .cube-grid-spinner .cube9 {\n      -webkit-animation-delay: 0.2s;\n      animation-delay: 0.2s;\n    }\n    \n    @-webkit-keyframes cubeGridScaleDelay {\n      0%, 70%, 100% {\n        -webkit-transform: scale3D(1, 1, 1);\n        transform: scale3D(1, 1, 1);\n      }\n      35% {\n        -webkit-transform: scale3D(0, 0, 1);\n        transform: scale3D(0, 0, 1);\n      }\n    }\n    \n    @keyframes cubeGridScaleDelay {\n      0%, 70%, 100% {\n        -webkit-transform: scale3D(1, 1, 1);\n        transform: scale3D(1, 1, 1);\n      }\n      35% {\n        -webkit-transform: scale3D(0, 0, 1);\n        transform: scale3D(0, 0, 1);\n      }\n    }\n  "],
+        template: "\n    <div [hidden]=\"!visible\" class=\"cube-grid-spinner\">\n      <div class=\"cube cube1\"></div>\n      <div class=\"cube cube2\"></div>\n      <div class=\"cube cube3\"></div>\n      <div class=\"cube cube4\"></div>\n      <div class=\"cube cube5\"></div>\n      <div class=\"cube cube6\"></div>\n      <div class=\"cube cube7\"></div>\n      <div class=\"cube cube8\"></div>\n      <div class=\"cube cube9\"></div>\n    </div>\n  "
+    })
+], CubeGridComponent);
 exports.CubeGridComponent = CubeGridComponent;
 //# sourceMappingURL=cube-grid.js.map

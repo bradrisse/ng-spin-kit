@@ -40,24 +40,23 @@ var RotatingPlaneComponent = (function () {
     RotatingPlaneComponent.prototype.ngOnDestroy = function () {
         this.cancel();
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], RotatingPlaneComponent.prototype, "delay", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean), 
-        __metadata('design:paramtypes', [Boolean])
-    ], RotatingPlaneComponent.prototype, "isRunning", null);
-    RotatingPlaneComponent = __decorate([
-        core_1.Component({
-            selector: 'sk-rotating-plane',
-            styles: ["\n    .rotating-plane-spinner {\n      margin: 25px auto;\n      width: 40px;\n      height: 40px;\n      background-color: #333;\n    \n      -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;\n      animation: sk-rotateplane 1.2s infinite ease-in-out;\n    }\n    \n    @-webkit-keyframes sk-rotateplane {\n      0% {\n        -webkit-transform: perspective(120px)\n      }\n      50% {\n        -webkit-transform: perspective(120px) rotateY(180deg)\n      }\n      100% {\n        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)\n      }\n    }\n    \n    @keyframes sk-rotateplane {\n      0% {\n        transform: perspective(120px) rotateX(0deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)\n      }\n      50% {\n        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)\n      }\n      100% {\n        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n      }\n    }\n  "],
-            template: "\n    <div [hidden]=\"!visible\" class=\"rotating-plane-spinner\"></div>\n  "
-        }), 
-        __metadata('design:paramtypes', [])
-    ], RotatingPlaneComponent);
     return RotatingPlaneComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], RotatingPlaneComponent.prototype, "delay", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean),
+    __metadata("design:paramtypes", [Boolean])
+], RotatingPlaneComponent.prototype, "isRunning", null);
+RotatingPlaneComponent = __decorate([
+    core_1.Component({
+        selector: 'sk-rotating-plane',
+        styles: ["\n    .rotating-plane-spinner {\n      margin: 25px auto;\n      width: 40px;\n      height: 40px;\n      background-color: #333;\n    \n      -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;\n      animation: sk-rotateplane 1.2s infinite ease-in-out;\n    }\n    \n    @-webkit-keyframes sk-rotateplane {\n      0% {\n        -webkit-transform: perspective(120px)\n      }\n      50% {\n        -webkit-transform: perspective(120px) rotateY(180deg)\n      }\n      100% {\n        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)\n      }\n    }\n    \n    @keyframes sk-rotateplane {\n      0% {\n        transform: perspective(120px) rotateX(0deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)\n      }\n      50% {\n        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)\n      }\n      100% {\n        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n      }\n    }\n  "],
+        template: "\n    <div [hidden]=\"!visible\" class=\"rotating-plane-spinner\"></div>\n  "
+    })
+], RotatingPlaneComponent);
 exports.RotatingPlaneComponent = RotatingPlaneComponent;
 //# sourceMappingURL=rotating-plane.component.js.map

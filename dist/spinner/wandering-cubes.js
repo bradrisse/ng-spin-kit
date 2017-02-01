@@ -40,24 +40,23 @@ var WanderingCubesComponent = (function () {
     WanderingCubesComponent.prototype.ngOnDestroy = function () {
         this.cancel();
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], WanderingCubesComponent.prototype, "delay", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean), 
-        __metadata('design:paramtypes', [Boolean])
-    ], WanderingCubesComponent.prototype, "isRunning", null);
-    WanderingCubesComponent = __decorate([
-        core_1.Component({
-            selector: 'sk-wandering-cubes',
-            styles: ["\n    .wandering-cubes-spinner {\n      position: relative;\n      margin: 25px auto;\n      width: 40px;\n      height: 40px;\n    }\n    \n    .cube1,\n    .cube2 {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 15px;\n      height: 15px;\n      background-color: #333;\n    \n      -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;\n      animation: sk-cubemove 1.8s infinite ease-in-out;\n    }\n    \n    .cube2 {\n      -webkit-animation-delay: -0.9s;\n      animation-delay: -0.9s;\n    }\n    \n    @-webkit-keyframes sk-cubemove {\n      25% {\n        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5)\n      }\n      50% {\n        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg)\n      }\n      75% {\n        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5)\n      }\n      100% {\n        -webkit-transform: rotate(-360deg)\n      }\n    }\n    \n    @keyframes sk-cubemove {\n      25% {\n        transform: translateX(42px) rotate(-90deg) scale(0.5);\n        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);\n      }\n      50% {\n        transform: translateX(42px) translateY(42px) rotate(-179deg);\n        -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);\n      }\n      50.1% {\n        transform: translateX(42px) translateY(42px) rotate(-180deg);\n        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);\n      }\n      75% {\n        transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);\n        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);\n      }\n      100% {\n        transform: rotate(-360deg);\n        -webkit-transform: rotate(-360deg);\n      }\n    }\n  "],
-            template: "\n    <div [hidden]=\"!visible\" class=\"wandering-cubes-spinner\">\n      <div class=\"cube1\"></div>\n      <div class=\"cube2\"></div>\n    </div>\n  "
-        }), 
-        __metadata('design:paramtypes', [])
-    ], WanderingCubesComponent);
     return WanderingCubesComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], WanderingCubesComponent.prototype, "delay", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean),
+    __metadata("design:paramtypes", [Boolean])
+], WanderingCubesComponent.prototype, "isRunning", null);
+WanderingCubesComponent = __decorate([
+    core_1.Component({
+        selector: 'sk-wandering-cubes',
+        styles: ["\n    .wandering-cubes-spinner {\n      position: relative;\n      margin: 25px auto;\n      width: 40px;\n      height: 40px;\n    }\n    \n    .cube1,\n    .cube2 {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 15px;\n      height: 15px;\n      background-color: #333;\n    \n      -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;\n      animation: sk-cubemove 1.8s infinite ease-in-out;\n    }\n    \n    .cube2 {\n      -webkit-animation-delay: -0.9s;\n      animation-delay: -0.9s;\n    }\n    \n    @-webkit-keyframes sk-cubemove {\n      25% {\n        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5)\n      }\n      50% {\n        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg)\n      }\n      75% {\n        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5)\n      }\n      100% {\n        -webkit-transform: rotate(-360deg)\n      }\n    }\n    \n    @keyframes sk-cubemove {\n      25% {\n        transform: translateX(42px) rotate(-90deg) scale(0.5);\n        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);\n      }\n      50% {\n        transform: translateX(42px) translateY(42px) rotate(-179deg);\n        -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);\n      }\n      50.1% {\n        transform: translateX(42px) translateY(42px) rotate(-180deg);\n        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);\n      }\n      75% {\n        transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);\n        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);\n      }\n      100% {\n        transform: rotate(-360deg);\n        -webkit-transform: rotate(-360deg);\n      }\n    }\n  "],
+        template: "\n    <div [hidden]=\"!visible\" class=\"wandering-cubes-spinner\">\n      <div class=\"cube1\"></div>\n      <div class=\"cube2\"></div>\n    </div>\n  "
+    })
+], WanderingCubesComponent);
 exports.WanderingCubesComponent = WanderingCubesComponent;
 //# sourceMappingURL=wandering-cubes.js.map
